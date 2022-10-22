@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess SECRET Number</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-item">
+            <h1 class='text-h1 secret-header'>GUESS SECRET</h1>
+            <h1 class='text-h1 number-header'>NUMBER</h1>
+        </div>
+    </div>
+
+    <div id="lose-main" class="lose-main">
+        <div class="lose">
+            <h2 class="text-lose">TURNs COMPLETED</h2>
+            <h2 class="text-lose">YOU LOSS THE GAME..</h2>
+            <h2 id="text-lose" class="text-lose"></h2>
+
+        </div>
+        <div>
+            <button id="btnPlayAgain" class="m1 submit">Play Again</button>
+        </div>
+    </div>
+
+    <div id="win-main" class="win-main">
+        <div class="win">
+            <h2 class="text-win">CONGRATULATIONS!!</h2>
+            <h2 id="text-win" class="text-Secret"></h2>
+            <h2 class="text-win">YOUR GUESS IS RIGHT..</h2>
+        </div>
+        <div>
+            <button id="btnPlayAgain1" class="m1 submit">Play Again</button>
+        </div>
+    </div>
+    <div class="main-guess">
+        <div class="main">
+
+            <div id="form" class="form">
+                <div class=" text secret">
+                    <div id="secret-cover" class="secret-cover">SECRET NUMBER</div>
+                    <div id="secret-bg" class="secret-bg"></div>
+                </div>
+                <div class="turn" id="turnId">Turn 0/15</div>
+                <div class="m1 guess-inp"><label for="guess"></label>
+                    <span><input id="inp" placeholder="Enter Guess b/w 1-100" type="number"></span>
+                </div>
+                <div class="buttons">
+                    <button id="btnSubmit" class="m1 submit">Check</button>
+                    <button id="btnRestart" class="m1 submit">Restart</button>
+                </div>
+
+            </div>
+            <div class="line"></div>
+            <div class="result">
+                <h3 class="text" id="res"></h3>
+            </div>
+        </div>
+        
+        <div class="guess-main-container">
+            <div class="guess-result" id="guess-result">
+
+                <!-- <div class="guess-container">
+                    <div class="guess-num"></div>
+                    <div class="guess"></div>
+                </div> -->
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
